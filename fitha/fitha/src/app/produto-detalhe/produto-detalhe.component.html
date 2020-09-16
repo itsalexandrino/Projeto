@@ -1,0 +1,54 @@
+<div class="container mb-3 mt-5 ">
+  <div class="d-flex justify-content-center">
+
+    <div class="col-md-6 mb-5 mt-5 ">
+      <img class="d-block w-90 h-90" src="{{produto.produtoImagem}}" alt="Primeiro Slide">
+    </div>
+
+    <div class="col-md-6 borda mb-5 mt-5 pl-5 shadow-sm ">
+      <h1 class="text-center teste1 ">{{produto.nome}}</h1>
+      <p class="font mb-0 "> Por Apenas:</p>
+      <div class="d-flex">
+        <p class="font-preco cor-preco">R$:{{produto.preco}}</p>
+        <p class="ml-2 "><b>Ou até 2x de </b></p>
+        <p class="ml-1 cor-preco font-duasvezes"> {{(produto.preco/2).toFixed(2)}}</p>
+        <p class="ml-1"><b> sem juros</b></p>
+      </div>
+      <div class="d-flex ">
+        <p class="font-duasvezes">Quantidade disponivel: {{produto.quantidade}} unidades</p>
+      </div>
+
+      <div class="d-flex ">
+        <p class="mt-2 mr-1 ml-0">Estoque:</p>
+        <p class="color-letra mt-2">Disponivel</p>
+      </div>
+      <div class="container d-flex justify-content-center  p-0">
+        <button class="btn botão-alter neon mr-1 mb-5 " [routerLink]="['/pedido',produto.id]">Adicionar ao
+          carrinho</button>
+          
+      </div>
+    </div>
+  </div>
+  <h4 class="text-center ">Informações sobre o produto</h4>
+  <hr class="mt-0">
+  <div class="d-flex">
+    <p>Cor:</p>
+    <p class="ml-2">{{produto.cor}}</p>
+  </div>
+  <div class="d-flex">
+    <p>Material:</p>
+    <p class="ml-2">{{produto.material}}</p>
+  </div>
+  <div>
+
+    <p>{{produto.descricao}}</p>
+
+
+
+  </div>
+
+  <div class="row d-flex justify-content-end mr-2">
+    <button class="btn botão-alter neon mr-1 mb-3" routerLink="/produtos">VOLTAR</button>
+  </div>
+
+</div>

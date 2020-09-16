@@ -1,0 +1,65 @@
+ .btn:focus, .btn:active{
+    outline:none !important;
+    box-shadow: none !important;
+}
+button{
+    border:none;
+    font-weight: bolder;
+    height: 60px;
+    width: 150px;
+    color: white;
+background-color: #a125ce;
+}
+.neon:active{
+    color: white;
+    background-color: #2f4ac2;
+        box-shadow: 0 0 0 0;
+        border: 0 none;
+}
+button:hover{
+    color: white;
+    background-color: #a125ce;
+}
+.borda{
+    max-width: 500px;
+    height: 500px;
+
+    border-radius: 2%;
+}
+.font-preco{
+    font-size: 40px;
+}
+.color-letra{
+    color: #00e1b8;
+    font-weight: bolder
+}
+.input-tam{
+    height:  60px;
+    width:70px;
+}
+
+.carousel-inner{
+    height: auto;
+}
+.cor-preco{
+    font-weight: bold;
+    color: #a125ce;
+}
+.font{
+    font-size: 20px;
+}
+h4{
+    background-color: #a125ce;
+    line-height: 35px;
+    color: white;
+}
+.teste1{
+    margin-top: 70px;
+}
+.font-duasvezes{
+    font-size: 18px;
+}
+img{
+    max-width: 500px;
+    max-height: 700px;
+}
